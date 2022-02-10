@@ -3,7 +3,7 @@
 :root {
     --white:  hsla(0, 0%, 100%, 0.75);
     --light-gray: hsl(0, 0%, 95%);
-    /*the cards*/
+    /*the cards color*/
     --orange: hsl(31, 77%, 52%);
     --dark-cyan: hsl(184, 100%, 22%);
     --vdarkcyan: hsl(179, 100%, 13%);
@@ -26,7 +26,6 @@ body {
     display: inherit;
     max-width: 51.8rem;
 }
-
    
 h1 {
     text-transform: uppercase;
@@ -34,6 +33,7 @@ h1 {
     font-family: 'Big Shoulders Display', cursive;
 }
 
+/* The Cards Content */
 .box p {
     color: var(--white);
     margin-bottom: 6rem;
@@ -42,7 +42,6 @@ h1 {
 .box {
     padding: 2.2rem;
     line-height: 1.5;
-    max-height: 28.1rem;
 }
 
 .box a {
@@ -77,29 +76,25 @@ h1 {
     color: var(--vdarkcyan);
 }
 
+
 .button {
     display: block;
     background: white;
     padding: 0.75rem;
     text-align: center;
     border-radius: 25px;
-    }
+}
 
+/* The Credits */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
-    .attribution a { 
-        color: hsl(228, 45%, 44%);
-     }
 
-@media only screen and (max-width: 768px) {
-    #content {
-        max-width: 87%;
-        padding-top: 5.31rem;
-        padding-bottom: 5.31rem;
-    }
+.attribution a { 
+     color: hsl(228, 45%, 44%);
 }
+
 
 @media only screen and (max-width: 640px) {
     #content {
