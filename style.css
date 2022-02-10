@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --white:  hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+    /*the cards*/
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --vdarkcyan: hsl(179, 100%, 13%);
+}
+
+body {
+    background: var(--light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+}
+
+#main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: inherit;
+    max-width: 51.8rem;
+}
+
+   
+h1 {
+    text-transform: uppercase;
+    color: var(--light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.box p {
+    color: var(--white);
+    margin-bottom: 6rem;
+}
+
+.box {
+    padding: 2.2rem;
+    line-height: 1.5;
+    max-height: 28.1rem;
+}
+
+.box a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.sedans {
+    background: var(--orange);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.sedans a {
+    color: var(--orange);
+}
+
+.suvs {
+    background: var(--dark-cyan);
+}
+
+.suvs a {
+    color: var(--dark-cyan);
+}
+
+.luxury {
+    background: var(--vdarkcyan);
+    border-radius: 0 0.5rem 0.5rem 0;
+
+}
+
+.luxury a {
+    color: var(--vdarkcyan);
+}
+
+.button {
+    display: block;
+    background: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 25px;
+    }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+     }
+
+@media only screen and (max-width: 768px) {
+    #content {
+        max-width: 87%;
+        padding-top: 5.31rem;
+        padding-bottom: 5.31rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #content {
+        flex-direction: column;
+    }
+
+    .box {
+        max-width: 14.2rem;
+    }
+
+    .box p {
+        margin-bottom: 2rem;
+    }
+
+    .sedans {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .button {
+        max-width: 50%;
+    }
+}      
